@@ -71,3 +71,4 @@ Also this project was developed using a combination of my own knowledge and skil
 - React Shared State https://react.dev/learn/sharing-state-between-components
 - Chakra UI https://chakra-ui.com/
 - Live chat https://tidio.com
+- Roehampton University Web Design2 Moodle Resource
