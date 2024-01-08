@@ -1,6 +1,6 @@
 import React from "react";
 import "./homebody.css";
-import profileImage from "../assets/image.png";
+import profileImage from "../assets/me.png";
 import btnImage from "../assets/hireme.png";
 import { Link } from "react-scroll";
 

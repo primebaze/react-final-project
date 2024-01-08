@@ -1,4 +1,5 @@
 import Contactbody from "./components/contactbody";
+import Footer from "./components/footer";
 import Header from "./components/header";
 import Homebody from "./components/homebody";
 import Portfolio from "./components/portfolio";
@@ -12,6 +13,7 @@ function App() {
       <Workofart />
       <Portfolio />
       <Contactbody />
+      <Footer />
     </div>
   );
 }
