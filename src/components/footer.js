@@ -11,7 +11,7 @@ const Footer = () => {
             reserved.
           </p>
         </div>
-      </body>{" "}
+      </body>
     </div>
   );
 };
