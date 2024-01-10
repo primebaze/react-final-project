@@ -30,6 +30,7 @@ body {
 .pageTitle {
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: white;
 }
 
 .clientDescription {
@@ -59,6 +60,7 @@ body {
   padding: 1rem;
   font-size: medium;
   font-weight: 300;
+  color: wheat;
 }
 
 .contactForm {
@@ -82,11 +84,12 @@ body {
   color: rgb(0, 0, 0);
   border: none;
   border-radius: 0.5rem;
-  background: rgb(255, 255, 255);
+  border-color: white;
+  background: rgb(59, 59, 59);
 }
 
 .submitButton {
-  background: white;
+  background: #307d3d;
   border: none;
   border-radius: 0.5rem;
   margin: 2rem;

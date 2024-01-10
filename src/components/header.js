@@ -1,143 +1,104 @@
 /* reference CHAT GPT */
 import React, { useState } from "react";
+import { useColorMode, Button, Flex, ChakraProvider } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
+import { ColorModeScript } from "@chakra-ui/react";
+import theme from "./theme";  // Replace with the correct path
+
 import "./header.css";
 import logo from "../assets/logo.png";
 import contactImg from "../assets/contact.png";
-import { Link } from "react-scroll";
 import menu from "../assets/menu.png";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
-  return (
-    <nav className="menu">
-      <img src={logo} alt="Logo" className="logo" />
-      <div className="desktopMenu">
-        <Link
-          activeClass="active"
-          to="main-introduction"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          className="desktopMenuListItem"
-        >
-          Home
-        </Link>
-        <Link
-          activeClass="active"
-          to="unique-skills"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
-          className="desktopMenuListItem"
-        >
-          About
-        </Link>
-        <Link
-          activeClass="active"
-          to="unique-works"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
-          className="desktopMenuListItem"
-        >
-          Portfolio
-        </Link>
-        <Link
-          activeClass="active"
-          to="clientSection"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
-          className="desktopMenuListItem"
-        >
-          Clients
-        </Link>
-      </div>
-      <button
-        className="desktopMenuBtn"
-        onClick={() => {
-          document
-            .getElementById("contactFormContainer")
-            .scrollIntoView({ behavior: "smooth" });
-        }}
-      >
-        <img src={contactImg} alt="" className="desktopMenuImg" />
-        Contact Me
-      </button>
+  const { colorMode, toggleColorMode } = useColorMode({ defaultColorMode: "dark" });
 
-      <img
-        src={menu}
-        alt="Menu"
-        className="mobMenu"
-        onClick={() => setShowMenu(!showMenu)}
-      />
-      <div className="navMenu" style={{ display: showMenu ? "flex" : "none" }}>
-        <Link
-          activeClass="active"
-          to="main-introduction"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
+  return (
+    <ChakraProvider theme={theme} resetCSS>
+      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+      <nav className="menu">
+        <img src={logo} alt="Logo" className="logo" />
+        <div className="desktopMenu">
+        <RouterLink to="/" className="desktopMenuListItem">
+          Home
+        </RouterLink>
+        <RouterLink to="/workofart" className="desktopMenuListItem">
+          About
+        </RouterLink>
+        <RouterLink to="/portfolio" className="desktopMenuListItem">
+          Portfolio
+        </RouterLink>
+        <RouterLink to="/clients" className="desktopMenuListItem">
+          Contact Me
+        </RouterLink>
+      </div>
+
+        {/* Dark/Light Mode Toggle Button */}
+        <Button className="desktopMenuBtn" ml="4" onClick={toggleColorMode}>
+          {colorMode === "light" ? "Dark Mode" : "Light Mode"}
+        </Button>
+
+        <img
+          src={menu}
+          alt="Menu"
+          className="mobMenu"
+          onClick={() => setShowMenu(!showMenu)}
+        />
+        <Flex
+          direction="column"
+          align="flex-start"
+          display={{ base: showMenu ? "flex" : "none", md: "none" }}
+        >
+          <RouterLink
+          to="/"
           className="listItem"
           onClick={() => setShowMenu(false)}
         >
           Home
-        </Link>
-        <Link
-          activeClass="active"
-          to="unique-skills"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
+        </RouterLink>
+        <RouterLink
+          to="/about"
           className="listItem"
           onClick={() => setShowMenu(false)}
         >
           About
-        </Link>
-        <Link
-          activeClass="active"
-          to="unique-works"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
+        </RouterLink>
+        <RouterLink
+          to="/portfolio"
           className="listItem"
           onClick={() => setShowMenu(false)}
         >
           Portfolio
-        </Link>
-        <Link
-          activeClass="active"
-          to="clientSection"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
+        </RouterLink>
+        <RouterLink
+          to="/clients"
           className="listItem"
           onClick={() => setShowMenu(false)}
         >
           Clients
-        </Link>
-        <Link
-          activeClass="active"
-          to="contactFormContainer"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
+        </RouterLink>
+        <RouterLink
+          to="/contact"
           className="listItem"
           onClick={() => setShowMenu(false)}
         >
           ContactUs
-        </Link>
-      </div>
-    </nav>
+        </RouterLink>
+
+          {/* Dark/Light Mode Toggle Button for Mobile */}
+          <Button
+            mt="4"
+            onClick={() => {
+              setShowMenu(false);
+              toggleColorMode();
+            }}
+          >
+            {colorMode === "light" ? "Dark Mode" : "Light Mode"}
+          </Button>
+        </Flex>
+      </nav>
+    </ChakraProvider>
   );
 };
 

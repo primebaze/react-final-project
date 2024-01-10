@@ -37,19 +37,6 @@ const Contactbody = () => {
 
   return (
     <div className="contactPageContainer">
-      <div className="card" id="clientSection">
-        <h1 className="pageTitle">My clients</h1>
-        <span className="clientDescription">
-          I have had the opportunity to work with a diverse group of companies.
-          Some of the notable companies I have worked with include
-        </span>
-        <div className="clientLogos">
-          <img src={walmartLogo} alt="Client" className="clientLogo" />
-          <img src={adobeLogo} alt="Client" className="clientLogo" />
-          <img src={microsoftLogo} alt="Client" className="clientLogo" />
-          <img src={facebookLogo} alt="Client" className="clientLogo" />
-        </div>
-      </div>
       <div className="card" id="contactFormContainer">
         <h1 className="pageTitle">Contact Me</h1>
         <span className="contactDescription">

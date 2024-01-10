@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Contactbody from "./components/contactbody";
 import Footer from "./components/footer";
 import Header from "./components/header";
@@ -7,14 +8,19 @@ import Workofart from "./components/workOfArt";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Homebody />
-      <Workofart />
-      <Portfolio />
-      <Contactbody />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Homebody />} />
+          <Route path="/workofart" element={<Workofart />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/clients" element={<Contactbody />} />
+          <Route path="*" element={<Homebody />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

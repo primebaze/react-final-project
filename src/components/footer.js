@@ -11,6 +11,10 @@ const Footer = () => {
             reserved.
           </p>
         </div>
+        <script
+          src="//code.tidio.co/qdet6orbvszz4qmrahs9fngbstmll0ps.js"
+          async
+        ></script>
       </body>
     </div>
   );
