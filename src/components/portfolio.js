@@ -19,12 +19,42 @@ const Portfolio = () => {
         satisfaction
       </span>
       <div className="unique-worksImgs">
-        <img src={Portfolio1} alt="" className="unique-worksImg" />
-        <img src={Portfolio2} alt="" className="unique-worksImg" />
-        <img src={Portfolio3} alt="" className="unique-worksImg" />
-        <img src={Portfolio4} alt="" className="unique-worksImg" />
-        <img src={Portfolio5} alt="" className="unique-worksImg" />
-        <img src={Portfolio6} alt="" className="unique-worksImg" />
+        <img
+          src={Portfolio1}
+          alt=""
+          className="unique-worksImg"
+          title="primebaze.net"
+        />
+        <img
+          src={Portfolio2}
+          alt=""
+          className="unique-worksImg"
+          title="primebaze.net"
+        />
+        <img
+          src={Portfolio3}
+          alt=""
+          className="unique-worksImg"
+          title="primebaze.com.ng"
+        />
+        <img
+          src={Portfolio4}
+          alt=""
+          className="unique-worksImg"
+          title="demisrestuarant"
+        />
+        <img
+          src={Portfolio5}
+          alt=""
+          className="unique-worksImg"
+          title="cryptoexchange"
+        />
+        <img
+          src={Portfolio6}
+          alt=""
+          className="unique-worksImg"
+          title="My WD1 portfolio website"
+        />
       </div>
       {/* <button className="unique-workBtn">See More</button> */}
     </section>

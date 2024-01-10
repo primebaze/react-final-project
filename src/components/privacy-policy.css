@@ -15,17 +15,17 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+.container h1 {
   color: #fff;
 }
 
-h2,
+.container h2,
 h3,
 h4 {
   color: #fff;
 }
 
-p {
+.container p {
   color: #fff;
   line-height: 1.5;
 }

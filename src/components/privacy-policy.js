@@ -5,7 +5,7 @@ const Privacy = () => {
   return (
     <div className="container">
       <h1>Privacy Policy</h1>
-      <p>Last updated: January 10, 2024</p>
+      <p className="privacy">Last updated: January 10, 2024</p>
       <p>
         This Privacy Policy describes Our policies and procedures on the
         collection, use and disclosure of Your information when You use the
