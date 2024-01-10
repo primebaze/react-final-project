@@ -20,13 +20,14 @@ const Homebody = () => {
           </span>
           <p className="intro-paragraph">
             I'm a highly skilled web developer with 7 years of experience
-            creating beautiful and functional websites for clients in various
-            industries.
+            creating beautiful <br />
+            and functional websites for clients in various industries.
             <br />
-            Proficient in React, Python, HTML, CSS, JavaScript, PHP, WordPress
-            and Other CMS platforms. Passionate about developing clean,
-            user-friendly interfaces that meet clients' needs and exceed their
-            expectations.
+            Proficient in React, Python, HTML, CSS, JavaScript, PHP, <br />
+            WordPress and Other CMS platforms.
+            <br /> Passionate about developing clean, user-friendly interfaces
+            that <br />
+            meet clients' needs and exceed their expectations.
           </p>
           <Link to="/clients">
             <button className="custom-btn">

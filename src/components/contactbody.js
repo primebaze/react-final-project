@@ -66,28 +66,28 @@ const Contactbody = () => {
           </button>
           <div className="socialLinks">
             <a
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/PrimebazeOfficial/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img src={facebookIcon} alt="Facebook" className="socialLink" />
             </a>
             <a
-              href="https://www.twitter.com"
+              href="https://www.twitter.com/primebaze"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img src={twitterIcon} alt="Twitter" className="socialLink" />
             </a>
             <a
-              href="https://www.youtube.com"
+              href="https://www.youtube.com/watch?v=BOznS5ZA3Rw"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img src={youtubeIcon} alt="YouTube" className="socialLink" />
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/primebaze_official/?hl=en"
               target="_blank"
               rel="noopener noreferrer"
             >
