@@ -12,7 +12,7 @@ const Homebody = () => {
           <img src={profileImage} alt="Profile" className="profile-image" />
         </div>
         <div className="text-container">
-          <span className="greeting">Hello,</span>
+          <span className="greeting">Welcome</span>
           <span className="introText">
             I'm <span className="person-name">Smith</span> <br />
             Website Designer

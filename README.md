@@ -22,12 +22,13 @@ This website was completed using react framework and including but not limited t
 
 # Website Description And Features
 
-This website has 4 pages
+This website has 5 pages
 
 - About
 - Contact
 - Portfolio page
 - clients page
+- Privacy Policy
 
 all pages are linked via routing
 
