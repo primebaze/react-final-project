@@ -40,7 +40,7 @@ all pages are linked via routing
 
 ## Apis included are:
 
--
+- Tidio Livechat Api
 -
 -
 -
@@ -49,7 +49,7 @@ all pages are linked via routing
 
 ## Other Frame works integrated are:
 
--
+- Chakra UI
 -
 -
 -
