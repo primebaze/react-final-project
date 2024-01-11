@@ -18,7 +18,8 @@ const portfolioImages = [
 
 const Portfolio = () => {
   const [projects, setProjects] = useState([]);
-  // Start of Gist Json File
+  const [searchTerm, setSearchTerm] = useState("");
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -34,11 +35,21 @@ const Portfolio = () => {
 
     fetchData();
   }, []);
-  console.log(projects);
+
+  const filteredProjects = projects.filter((project) =>
+    project.projectName.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <section id="unique-works">
       <h2 className="unique-worksTitle">My Portfolio</h2>
+      <input
+        className="searchBar"
+        type="text"
+        placeholder="Search portfolio..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
       <span className="unique-worksDesc">
         Developed and maintained the company's website using HTML, CSS, and
         JavaScript, implementing responsive design principles and front-end
@@ -46,9 +57,9 @@ const Portfolio = () => {
         and user-friendly interface that improved user engagement and
         satisfaction
       </span>
-      {projects.length > 0 && (
+      {filteredProjects.length > 0 && (
         <div className="unique-worksImgs">
-          {projects.map((project, index) => (
+          {filteredProjects.map((project, index) => (
             <div key={index}>
               <img
                 src={portfolioImages[index]}

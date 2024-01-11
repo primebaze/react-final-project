@@ -48,7 +48,24 @@
   background: white;
   font-size: 1rem;
 }
+.searchBar {
+  padding: 8px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  outline: none;
+}
 
+.searchBar::placeholder {
+  color: #888;
+}
+
+.searchBar:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
 @media screen and (max-width: 585px) {
   .unique-worksImg {
     height: 48vw;
