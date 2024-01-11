@@ -24,10 +24,10 @@ This website was completed using react framework and including but not limited t
 
 This website has 5 pages
 
+- Home
 - About
 - Contact
 - Portfolio page
-- clients page
 - Privacy Policy
 
 all pages are linked via routing
