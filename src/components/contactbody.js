@@ -48,18 +48,21 @@ const Contactbody = () => {
             className="nameInput"
             placeholder="Your name"
             name="from_name"
+            required
           />
           <input
-            type="text"
+            type="email"
             className="emailInput"
             placeholder="Your Email"
             name="from_email"
+            required
           />
           <textarea
             name="message"
             placeholder="Your Message"
             rows={5}
             className="messageInput"
+            required
           ></textarea>
           <button type="submit" value="Send" className="submitButton">
             Submit
