@@ -41,7 +41,7 @@ all pages are linked via routing
 ## Apis included are:
 
 - Tidio Livechat Api
-- i tried to add rest api but there wasnt enough time for me as i am the team lead for our software development 2 website project.
+- I inserted Json file of my project in Gist Api from githb to fetch data as required by portfolio
 
 ## Other Frame works integrated are:
 

@@ -1,4 +1,3 @@
-/* reference CHAT GPT */
 import React, { useState } from "react";
 import { useColorMode, Button, Flex, ChakraProvider } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
@@ -115,4 +114,3 @@ const Header = () => {
 };
 
 export default Header;
-/* reference CHAT GPT */
