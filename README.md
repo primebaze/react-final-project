@@ -52,13 +52,11 @@ all pages are linked via routing
 
 This project incorporates My code and code/libraries from various sources, and I do not claim ownership of all the code used. Credits and attribution are given wherever possible.
 
-Also this project was developed using a combination of my own knowledge and skills, along with some assistance from ChatGPT. While ChatGPT was used as a resource, the majority of the project reflects my personal understanding and expertise. However, it's important to note that the core concepts, design decisions, and implementation are primarily based on my own knowledge and experience.
 
 # References
 
 - Youtube https://youtube.com
 - W3 Schools https://w3schools.com
-- ChatGPT https://chat.openai.com/
 - Github https://github.com/
 - Vercel https://vercel.app
 - Routing https://hygraph.com/blog/routing-in-react
