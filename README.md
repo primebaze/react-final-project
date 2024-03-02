@@ -2,6 +2,7 @@
 
 Live URL: https://react-final-project-psi.vercel.app/
 Website is hosted at Vercel
+## PLEASE NOTE: As per project requirement and very close project time frame window, this website isnt responsive. You can enjoy the view on pc screen only as of now.
 
 # Portfolio website
 
